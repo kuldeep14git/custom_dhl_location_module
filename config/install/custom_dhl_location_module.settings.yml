@@ -1,0 +1,2 @@
+dhl_api_key: 'demo-key'
+dhl_api_url: 'https://api.dhl.com/location-finder/v1/find-by-address'

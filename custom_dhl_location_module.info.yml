@@ -1,0 +1,6 @@
+name: 'Custom DHL Location module'
+description: 'Provides a form to find DHL locations utilizing DHL API.'
+package: Custom
+core_version_requirement: ^10
+type: module
+

@@ -1,0 +1,24 @@
+custom_dhl_location_module.form:
+  path: '/dhl-form'
+  defaults:
+    _title: 'DHL Locations Form'
+    _form: '\Drupal\custom_dhl_location_module\Form\LocationForm'
+  requirements:
+    _permission: 'access content'
+
+custom_dhl_location_module.display:
+  path: '/dhl-form/{country}/{city}/{postal_code}'
+  defaults:
+    _controller: '\Drupal\custom_dhl_location_module\Controller\LocationController::display'
+    _title: 'DHL Locations'
+  requirements:
+    _permission: 'access content'
+
+custom_dhl_location_module.settings:
+  path: '/admin/config/services/dhl-settings'
+  defaults:
+    _form: 'Drupal\custom_dhl_location_module\Form\DhlSettingsForm'
+    _title: 'DHL Settings'
+  requirements:
+    _permission: 'administer site configuration'
+

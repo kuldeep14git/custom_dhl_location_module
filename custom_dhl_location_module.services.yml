@@ -1,0 +1,4 @@
+services:
+  custom_dhl_location_module.dhl_location_service:
+    class: 'Drupal\custom_dhl_location_module\Service\DhlLocationService'
+    arguments: ['@http_client', '@config.factory']
